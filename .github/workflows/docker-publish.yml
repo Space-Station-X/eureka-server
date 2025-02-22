@@ -29,7 +29,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t raydberg25/raydberg25/eureka-server .
+        run: docker build -t raydberg25/eureka-server .
 
       - name: Push Docker image
-        run: docker push raydberg25/raydberg25/eureka-server
+        run: docker push raydberg25/eureka-server
